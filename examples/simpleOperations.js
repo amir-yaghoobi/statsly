@@ -1,16 +1,28 @@
 const Statsly = require('../index')
 
-
-const statsly = new Statsly({
+const redisConfig = {
   port: 6379,
   host: '127.0.0.1',
   family: 4,
   password: '',
   db: 0
-}, {
+}
+
+const influxConfig = {
   host: 'localhost',
   port: 8086,
-})
+}
+
+const statslyConfig = {
+  categoryMapper: (category) => category + '-sample',
+  // moment: require('moment') // you can provide you custom moment
+  prefix: 'statsly',
+  defaultExpiry: 172800,
+  measurement: 'stats',
+  dateFormat: 'YYYYMMDD',
+}
+
+const statsly = new Statsly(redisConfig, influxConfig, statslyConfig)
 
 
 const categories = ['cat01', 'cat02', 'cat03', 'cat04']
