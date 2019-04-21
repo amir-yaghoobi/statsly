@@ -1,4 +1,5 @@
 # Statsly
+[![npm version](https://badge.fury.io/js/statsly.svg)](https://badge.fury.io/js/statsly)
 
 Statsly is a stats collector leveraging [redisDB](https://redis.io/) and [influxDB](https://www.influxdata.com/)
 
