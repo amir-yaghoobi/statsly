@@ -1,14 +1,10 @@
 # Statsly
 
-Statsly is a stats collector leveraging [redisDB](https://redis.io/) and [influxDB](https://www.influxdata.com/
+Statsly is a stats collector leveraging [redisDB](https://redis.io/) and [influxDB](https://www.influxdata.com/)
 
 ## Installation
 
 Run `npm install statsly`
-
-## Example
-
-Check out `examples/` folder
 
 ## Usage
 
@@ -27,3 +23,7 @@ statsly.startCollector(frequency)
 > Collector only insert stats for registered categories
 
 
+
+## Example
+
+Check out `examples/` folder for more example and usages.
