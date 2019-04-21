@@ -1,0 +1,19 @@
+{
+  "name": "statsly",
+  "version": "0.0.0",
+  "description": "NodeJs stats collector using redisDB and influxDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["stats collector", "redis", "influx", "node"],
+  "author": "Amirhossein Yaghoobi <a.yaghoobi.dev@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "bluebird": "^3.5.4",
+    "debug": "^4.1.1",
+    "influx": "^5.0.7",
+    "ioredis": "^4.9.0",
+    "moment": "^2.24.0"
+  }
+}
