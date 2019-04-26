@@ -1,6 +1,6 @@
 {
   "name": "statsly",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NodeJs stats collector using redisDB and influxDB",
   "main": "index.js",
   "scripts": {
